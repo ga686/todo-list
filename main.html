@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    <div class="edit-btn">edit</div>
+    <h3 style="color:#BDBDBD;">Press enter to add list items/Change list order click edit btn</h3>
+    <div class="container">
+        <form class="add-task-wrapper">
+            <textarea class="add-input" cols="46" placeholder="Write a new task" style="overflow:hidden" required></textarea>
+            <div class="node-select-wrap">
+            <button class="node-select work"><span class="dot dot-work"></span>work</button>
+            <ul class="node-select-scroll">
+                <li class="work"><span class="dot dot-work"></span>work</li>
+                <li class="busy"><span class="dot dot-busy"></span>busy</li>
+                <li class="home"><span class="dot dot-home"></span>home</li>
+            </ul>
+            </div>
+            <svg viewBox="0 0 320 512" width="10" class="angle-down">
+            <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+            </svg>
+        </form>
+        <ul class="unfinished-list">
+        </ul>
+        </div>
+        <div class="trash-box draggable">
+        <div>
+            <svg viewBox="0 0 448 512" width="100" title="trash-alt">
+            <path d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z" />
+            </svg>
+        </div>
+    </div>
+</body>
+<script defer src="./script.js"></script>
+</html>
